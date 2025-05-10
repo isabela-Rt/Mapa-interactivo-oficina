@@ -1,0 +1,34 @@
+<html lang="es"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <button id="openModal">Seleccionar Fecha</button>
+
+    <div id="calendarModal" class="modal">
+        <div class="modal-content">
+            <label for="turno">Turno:</label>
+            <select id="turno">
+                <option value="M">Mañana</option>
+                <option value="T">Tarde</option>
+                <option value="todo_dia">Todo el Día</option>
+            </select>
+            <br><br>
+            <h3>Selecciona una fecha</h3>
+            <input type="text" id="datepicker">
+            <br><br>
+            <button id="closeModal">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="map"></div>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
